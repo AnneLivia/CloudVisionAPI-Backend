@@ -29,4 +29,4 @@ const ErrorFactory = (type, message, additionalInformation) => {
   }
 };
 
-export default new ErrorFactory();
+export default ErrorFactory;
