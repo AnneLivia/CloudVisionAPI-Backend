@@ -3,7 +3,7 @@ import ErrorFactory from '../utils/objects/ErrorFactory.js';
 
 const optionValidator = (req, res, next) => {
   if (!req.query.option) {
-    return next(ErrorFactory.create(
+    return next(ErrorFactory(
       'BadRequest',
       'You must provide an option on the URL. '
             + 'Example: .../api/useCloudVisionAPI/?option=TEXT_DETECTION',
@@ -13,7 +13,7 @@ const optionValidator = (req, res, next) => {
     ));
   }
   if (!(req.query.option in CLOUDVISION_OPTIONS)) {
-    return next(ErrorFactory.create(
+    return next(ErrorFactory(
       'BadRequest',
       'The provided option is not supported by this application',
       {

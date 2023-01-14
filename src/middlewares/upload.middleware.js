@@ -39,7 +39,7 @@ const uploadSingleImage = upload.single('image');
 const uploadMiddleware = (req, res, next) => {
   uploadSingleImage(req, res, (error) => {
     if (error) {
-      return next(ErrorFactory.create('BadRequest', error.message));
+      return next(ErrorFactory('BadRequest', error.message));
     }
 
     next();

@@ -4,7 +4,7 @@ import executeCloudVisionOption from '../utils/functions/executeCloudVisionOptio
 const Controller = {
   async useCloudVisionAPI(req, res, next) {
     try {
-      if (!req.file) { return next(ErrorFactory.create('BadRequest', 'You must upload an image (maximum image size is 10MB)')); }
+      if (!req.file) { return next(ErrorFactory('BadRequest', 'You must upload an image (maximum image size is 10MB)')); }
 
       const image = req.file;
       const result = await executeCloudVisionOption(req.query.option, image.buffer);
@@ -12,7 +12,7 @@ const Controller = {
       res.json({ result });
     } catch (error) {
       console.error(error);
-      next(ErrorFactory.create('BadRequest', 'Unexpected Error', { error: error.message }));
+      next(ErrorFactory('BadRequest', 'Unexpected Error', { error: error.message }));
     }
   },
 };
