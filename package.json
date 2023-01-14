@@ -1,0 +1,40 @@
+{
+  "name": "image_ocr",
+  "version": "1.0.0",
+  "description": "A backend application to perform OCR in PDF using Cloud Vision API",
+  "main": "index.js",
+  "author": "Anne Livia",
+  "license": "MIT",
+  "type": "module",
+  "scripts": {
+    "dev": "nodemon src/server.js",
+    "start": "node src/server.js",
+    "test": "cross-env NODE_OPTIONS=--experimental-vm-modules jest",
+    "lint": "eslint src/",
+    "lintFix": "eslint src/ --fix",
+    "husky-prepare": "husky install",
+    "husky-hook" : "husky add .husky/pre-commit \"npx --no-install lint-staged\""
+  },
+  "dependencies": {
+    "@google-cloud/vision": "^3.0.1",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "helmet": "^6.0.1",
+    "morgan": "^1.10.0",
+    "multer": "1.4.3"
+  },
+  "devDependencies": {
+    "eslint": "^7.32.0 || ^8.2.0",
+    "husky": "^8.0.0",
+    "lint-staged": "^13.1.0",
+    "@types/jest": "^29.2.5",
+    "@types/supertest": "^2.0.12",
+    "cross-env": "^7.0.3",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.25.2",
+    "jest": "^29.3.1",
+    "nodemon": "^2.0.20",
+    "supertest": "^6.3.3"
+  }
+}
