@@ -1,0 +1,4 @@
+{
+    "*.{js}": "eslint",
+    "__tests__/**/*.{js}" : "yarn test"
+}
