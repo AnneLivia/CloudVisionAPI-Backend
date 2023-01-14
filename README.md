@@ -1,6 +1,6 @@
 # CloudVisionAPI-Backend
 
-[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/olavoparno/jest-badges-readme/blob/master/LICENSE)
+[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/AnneLivia/CloudVisionAPI-Backend/blob/main/LICENCE)
 ![Google Cloud Vision](https://img.shields.io/badge/Google-4285F4?style=flat&logo=Google&logoColor=white)
 ![Node JS](https://img.shields.io/badge/Jest-C21325?style=flat&logo=Jest&logoColor=white)
 ![Express](https://img.shields.io/badge/Express-000000?style=flat&logo=Express&logoColor=white)
