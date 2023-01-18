@@ -1,4 +1,4 @@
-import CloudVisionAPIHelper from '../objects/CloudVisionAPIHelper.js';
+import CloudVisionService from '../../controllers/CloudVisionService.js';
 
 /**
  * @description This function allows to analyze images using Cloud Vision by providing the desired
@@ -8,6 +8,6 @@ import CloudVisionAPIHelper from '../objects/CloudVisionAPIHelper.js';
  * @returns Result from Google Cloud Vision API considering the feature provided
  */
 
-const executeCloudVisionOption = (option, image) => CloudVisionAPIHelper[option](image);
+const executeCloudVisionOption = (option, image) => CloudVisionService[option](image);
 
 export default executeCloudVisionOption;

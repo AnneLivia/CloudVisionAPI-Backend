@@ -1,13 +1,13 @@
 import Vision from '@google-cloud/vision';
 import path from 'path';
-import CLOUDVISION_OPTIONS from '../../constants/cloudvisionOptions.js';
+import CLOUDVISION_OPTIONS from '../constants/cloudvisionOptions.js';
 
 // deve-se passar o caminho para a credencial
 const client = new Vision.ImageAnnotatorClient({
   keyFilename: path.resolve('src', 'config', 'keys.json'),
 });
 
-const CloudVisionAPIHelper = {
+const CloudVisionService = {
   [CLOUDVISION_OPTIONS.FACE_DETECTION]: async (image) => {
     try {
       const result = await client.faceDetection(image);
@@ -121,4 +121,4 @@ const CloudVisionAPIHelper = {
   },
 };
 
-export default CloudVisionAPIHelper;
+export default CloudVisionService;
