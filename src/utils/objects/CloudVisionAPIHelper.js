@@ -95,6 +95,11 @@ const CloudVisionAPIHelper = {
   [CLOUDVISION_OPTIONS.DOCUMENT_TEXT_DETECTION]: async (image) => {
     try {
       const result = await client.documentTextDetection(image);
+
+      if (result[0].error) {
+        throw new Error(result[0].error.message);
+      }
+
       return result[0].fullTextAnnotation;
     } catch (error) {
       throw new Error(error.message);
@@ -104,6 +109,11 @@ const CloudVisionAPIHelper = {
   [CLOUDVISION_OPTIONS.TEXT_DETECTION]: async (image) => {
     try {
       const result = await client.textDetection(image);
+
+      if (result[0].error) {
+        throw new Error(result[0].error.message);
+      }
+
       return result[0].fullTextAnnotation;
     } catch (error) {
       throw new Error(error.message);
