@@ -52,3 +52,11 @@ This API allows to execute the following features that must be provided in the f
   - WEB_DETECTION
 <br/>
 <p align="center">© Developed by Anne Livia</p>
+
+## Frontend Application
+
+- [OCR](https://github.com/AnneLivia/OCR-Frontend)
+- [Object Detection](https://github.com/AnneLivia/ObjectDetectionCloudVision)
+- [Face Emotion Analysis](https://github.com/AnneLivia/FaceEmotionsCloudVision)
+- [Landmark Localization](https://github.com/AnneLivia/LandmarkCloudVision)
+- [License Plate Detection and Text Extraction](https://github.com/AnneLivia/DetectLicensePlateCloudVision)
