@@ -50,8 +50,7 @@ This API allows to execute the following features that must be provided in the f
   - SAFE_SEARCH_DETECTION
   - TEXT_DETECTION
   - WEB_DETECTION
-<br/>
-<p align="center">© Developed by Anne Livia</p>
+
 
 ## Frontend Application
 
@@ -60,3 +59,8 @@ This API allows to execute the following features that must be provided in the f
 - [Face Emotion Analysis](https://github.com/AnneLivia/FaceEmotionsCloudVision)
 - [Landmark Localization](https://github.com/AnneLivia/LandmarkCloudVision)
 - [License Plate Detection and Text Extraction](https://github.com/AnneLivia/DetectLicensePlateCloudVision)
+
+
+<br/>
+<p align="center">© Developed by Anne Livia</p>
+
